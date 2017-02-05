@@ -1,0 +1,492 @@
+/*
+Theme Name : E- Commerce;
+Theme Author: Nur Wahyudi;
+Version:1.0;
+
+*/
+
+/*Setting Fonts yang di gunakan untuk awesome*/
+@font-face{
+	font-family: 'Lato-Bold';
+	src: url('../fonts/Lato-Bold.ttf');
+}
+@font-face{
+	font-family: 'Lato-Light';
+	src: url('../fonts/Lato-Light.ttf');
+}
+@font-face{
+	font-family: 'Lato-Medium';
+	src: url('../fonts/Lato-Medium.ttf');
+}
+
+.sibold{
+	font-family: "Lato-Bold";
+}
+
+.simedium{
+	font-family: "Lato-Medium";
+}
+
+.simedium{
+	font-family: "Lato-Light";
+}
+
+body{
+	padding:0;
+	margin: 0;
+}
+
+
+/*header*/
+/*1*/
+.header{
+	width: 100%;
+	overflow: hidden;
+	background: #152f49;
+}
+
+.header .container{
+	width: 1200px;
+	overflow: hidden;
+	margin: auto;
+}
+
+/* Right */
+.header .container .right {
+	font-family: "Lato-Light";
+	margin-top: 0px;
+	background: pink;
+}
+
+.header .container .right li {
+	float: left;
+	display: block; /*menghilangkan bullet*/
+	padding: 10px;
+	margin-top: 1px;
+	background: #152f49;
+	margin-left: 10px;
+	transition: all 1s;
+}
+
+.header .container .right li:hover {
+	background: #858383;
+}
+
+.header .container .right li a{
+	text-decoration: none;
+	color: white;
+	
+}
+
+.header .container .right li a:hover{
+	color: black;
+}
+
+/* edit dRopdown */
+.header .container .right ul{
+	display: none; 
+	position: absolute;
+	
+	/* z-index: 50;  Masalah pada drodown */
+	margin-left: -50px;
+	padding-top: 10px;
+}
+
+.header .container .right li:hover ul{
+	display: block;
+}
+
+.header .container .right ul li{
+
+	float: none;
+	
+	margin: 0;
+	width: 110px;
+}
+
+/*2*/
+.header2{
+	width: 100%;
+	overflow: hidden;
+	background: #193654;
+
+}
+
+.header2 .container{
+	width: 1200px;
+	height: 500px;
+	margin: auto;
+}
+
+.header2 .container .left{
+	float: left;
+	margin-top: 10px;
+	margin-left: 60px;
+}
+
+.header2 .container .right{
+	float: right;
+	margin-top: 10px;
+	margin-right:60px;
+}
+
+.header2 .container .right img{
+	margin-right:60px;
+	margin-top:-10px;
+
+}
+
+.header2 .container .right li {
+	float: right;
+	display: block; /*menghilangkan bullet*/
+	margin-top: 10px;
+	padding:10px;
+	background: #0A1B42;
+	color: white;
+}
+.header2 .container .right h5{
+	overflow: hidden;
+	color: white;
+
+}
+
+.header2 .container .gambar{
+	margin-top: 10px;
+	margin-left:130px;
+}
+
+/*title*/
+.title{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+.title .container{
+	width: 100%;
+		
+}
+
+.title .container .h-title{
+	background: #e2dcdc;
+	font-family: "Lato-Light";
+	color: black;
+	text-align: left;
+	border-left: 5px solid #e74c3c;
+	padding: 10px;
+	padding-left: 100px;
+}
+
+.title .container .h-title2{
+	margin-top: 10px;	
+	font-family: "Lato-Light";
+	color: black;
+	text-align: center;
+	padding: 10px;
+}
+
+/*ap-online*/
+.ap-online{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 10px;
+	
+}
+
+.ap-online .container{
+	width: 100%;
+		
+}
+
+.ap-online .container .d-online{
+	width: 200px;/*230*/
+	overflow: hidden;
+	/* background: red; awal*/
+	border-radius: 3px;
+	float: left;
+	/*margin-left: 10px; awal*/
+	margin-left: 100px;
+	margin-top: 10px;	
+}
+
+.ap-online .container img{
+	width: 150px;
+	height: 140px;
+	margin-left: 25px; 
+	border-radius: 100%; /*unttk membuat foto menjadi bulat*/
+    transition: all 0.5s;
+}
+
+.ap-online .container img:hover{
+	box-shadow: 1px 1px 10px 3px; 
+    border-radius:0;
+}
+
+
+.ap-online .container h3{
+	font-family: "Lato-Medium";
+	margin: 0;
+	margin-top: 10px;/*Jarak antar tulisan dengan objek*/
+	margin-bottom: -10px;
+	text-align: center;
+}
+
+.ap-online .container p{
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: -20px;
+	font-family: "Lato-Light";
+	text-align: justify;
+}
+
+.ap-online .container a{
+	text-decoration: none;
+	color: #3498db;
+	transition:all 1s;
+}
+
+.ap-online .container a:hover{
+	color: black;
+}
+
+.ap-online .container h5{
+	font-family: "Lato-Light";
+	text-align: right;
+	color: red;
+	transition: all 1s;
+}
+
+.ap-online .container h5:hover{
+	color: black;
+}
+
+/* slider */
+
+
+
+.banner-slider {
+	width: 100%;
+	overflow: hidden;
+	
+}
+
+#owl-banner-slider .item{
+    margin-top:-80px;
+}
+
+#owl-banner-slider .item h3{
+    margin-top: 100px;
+    margin-right: 50px;
+    font-family: 'Lato-Bold'; 
+    color: #000000;
+    text-align: center;
+}
+
+#owl-banner-slider .item p{
+    margin-right: 50px;
+    font-family: 'Lato-Bold'; 
+    color: #000000;
+    text-align: center;
+}
+	#owl-banner-slider .owl-prev {
+		
+	display: none;
+	}
+
+	#owl-banner-slider .owl-next {
+		display: none;
+	}
+
+	#owl-banner-slider .owl-pagination {
+		display: none; /* jika ingin digunakan indikator hapuslah class ini */
+	}
+
+/*p-dosen*/
+.p-dosen{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 10px;
+	
+}
+
+.p-dosen .container{
+	width: 100%;
+		
+}
+
+.p-dosen .container .d-dosen{
+	width: 200px;/*230*/
+	overflow: hidden;
+	/* background: red; awal*/
+	border-radius: 3px;
+	float: left;
+	/*margin-left: 10px; awal*/
+	margin-left: 50px;
+	margin-top: 10px;	
+}
+
+.p-dosen .container img{
+	width: 150px;
+	height: 140px;
+	margin-left: 25px; 
+	border-radius: 30%; /*unttk membuat foto menjadi bulat*/
+}
+
+
+
+.p-dosen .container .d-dosen .imgg{
+	width: 40px;
+	height: 40px;
+	padding-left: 140px;
+	margin: 0;
+	margin-top: 100px;/*Jarak antar tulisan dengan objek*/
+	text-align: center;
+}
+
+.p-dosen .container .d-dosen .tez{
+	margin: 0;
+	margin-top: 10px;/*Jarak antar tulisan dengan objek*/
+	margin-bottom: 30px;/*Jarak antar tulisan dengan objek*/
+	text-align: center;
+}
+
+.p-dosen .container .d-dosen2{
+	width: 200px;/*230*/
+	overflow: hidden;
+	/* background: red; awal*/
+	border-radius: 3px;
+	float: left;
+	/*margin-left: 10px; awal*/
+	margin-left: -10px;
+	margin-top: 60px;	
+}
+
+.p-dosen .container .d-dosen2 .imgg2{
+	width: 40px;
+	height: 40px;
+	padding-right: 120px;
+	margin: 0;
+	margin-top: 10px;/*Jarak antar tulisan dengan objek*/
+
+	text-align: center;
+}
+
+.p-dosen .container .d-dosen2 .tez2{
+	margin: 0;
+	margin-top: 10px;/*Jarak antar tulisan dengan objek*/
+	margin-bottom: 50px;/*Jarak antar tulisan dengan objek*/
+	text-align: center;
+}
+.p-dosen .container p{
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: -20px;
+	font-family: "Lato-Light";
+	text-align: justify;
+}
+
+/* slider */
+/*Mega footer*/
+.mega-footer{
+	width: 100%;
+	overflow: hidden;
+	background: #e2dcdc;
+
+}
+
+.mega-footer .content{
+	width: 350px; /* di bagi mejadi 3 bagian */ 
+	overflow: hidden;
+	/*height: 200px; awal*/
+	/*background: red; awal */
+	font-family:'Lato-Medium';
+	float: left;
+	margin-left: 70px;
+	color: black;
+	text-align: justify;
+}	
+
+.mega-footer .content p{
+	font-family:'Lato-Light';
+	color: blue;
+	text-align: justify;
+}	
+
+.mega-footer .content hr{
+	color: blue;
+	margin-bottom:-10px;
+}
+
+.mega-footer .content  textarea{
+	border: 1px solid #c9c9c9;
+	border-radius: 3px;
+	width: 315px;
+	height: 100px;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.mega-footer .content input.nama{
+	border: 1px solid #c9c9c9;
+	width: 320px;
+	border-radius: 3px;
+	height: 25px;
+	padding: 8px;
+	margin-bottom: 8px;
+	transition: 1s all;
+	-moz-transition: 1s all;
+	-o-transition: 1s all;
+}
+
+.mega-footer .content input.email{
+	border: 1px solid #c9c9c9;
+	border-radius: 3px;
+	height: 25px;
+	width: 320px;
+	padding: 8px;
+	margin-bottom: 8px;
+	transition: 1s all;
+	-moz-transition: 1s all;
+	-o-transition: 1s all;
+}
+.mega-footer .content input:focus {
+    border: 1px solid #26C281;
+    transition: 1s all;
+    -moz-transition: 1s all;
+    -o-transition: 1s all;
+ }
+
+.mega-footer .content  .button {
+    background: #df4231;
+    color: #ffffff;
+    width: 340px;
+    margin-top: 10px;
+    height: 40px;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    transition: 1s all;
+    -moz-transition: 1s all;
+    -o-transition: 1s all;
+    margin-bottom: 10px;
+}
+.mega-footer .content .button:hover {
+        background: #19B5FE;   
+        transition: 1s all;
+        -moz-transition: 1s all;
+        -o-transition: 1s all;
+}
+ /*SMALL FOOTER*/
+.small-footer{
+	width: 100%;
+	overflow: hidden;
+	background: #152f49;
+}
+
+.small-footer .copyright{
+	float: left;
+	font-family: "Lato-Light";
+	color: white;
+
+	margin-left: 100px;
+}
